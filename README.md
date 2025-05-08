@@ -7,7 +7,7 @@ Achtung: Der Bot ist auschlisslich in deutscher Sprache!
 
 ENGLISH: 
 This is my third project. I tried to program a very simple chat bot. Most of the answers are hard-coded, so it's not very smart yet. I've therefore tried to make it a bit more contextual and to respond to the emotional state, for example.
-He can also remember the name. I don't know how well all this works... Everything worked in my test, but of course that doesn't mean it's the same. But it fits. 
+He can also remember the name. I don't know how well all this works... Everything worked in my test, but of course that doesn't mean it's the same for everyone else. But it fits. 
 I also tried a WikiScraper so that the bot can solve possible questions individually. However, this is quite limited, but for simple questions about known persons or similar it should work (at least for me lol).
 I don't plan to update this bot further, as it only served as a learning opportunity towards machine learning (well, only partly...) and API's/WebScrapers.
 Warning: The Bot only functions in german Language!
