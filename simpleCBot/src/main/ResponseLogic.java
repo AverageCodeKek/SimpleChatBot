@@ -43,8 +43,12 @@ public class ResponseLogic {
 	        else if(tempUserString.contains("du ") || tempUserString.contains("garry") ||  tempUserString.contains("bot ")){
 	            responseString = handleAboutGarry(tempUserString);
 	        }
-	        else if(lastUserInput != null && 
-	                (lastUserInput.contains("wie geht") || lastUserInput.contains("wie fühl"))) {
+	        else if(tempUserString.contains("ja") || tempUserString.contains("nein") || tempUserString.contains("lüge") || 
+	                tempUserString.contains("wahr")) {
+	            responseString = "Garry: Das kann ich so nicht konkret beantworten...";
+	        }
+	        else if(tempUserString != null && 
+	                (tempUserString.contains("wie geht") || tempUserString.contains("wie fühl"))) {
 	            responseString = "Garry: Ah, du antwortest auf meine Frage von vorhin! " + 
 	                           (currentMood.equals("positive") ? 
 	                           "Freut mich, dass es dir gut geht!" : 
@@ -67,7 +71,7 @@ public class ResponseLogic {
 	        	responseString = "Garry: Joa, stimmt wohl . . .";
 	        }
 
-	        return responseString; // temp
+	        return responseString;
 	    }
 	    
 	    

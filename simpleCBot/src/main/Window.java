@@ -21,7 +21,7 @@ public class Window {
 		frame = new JFrame();
 		frame.setTitle("Garry-ChatBot");
 		frame.setSize(1000, 1000);
-		frame.setResizable(true);
+		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//Init Font
@@ -68,6 +68,7 @@ public class Window {
 		mainPanel.add(chatTextArea);
 		mainPanel.add(userTextArea);
 		mainJScrollPane = new JScrollPane(mainPanel);
+		mainJScrollPane.setBorder(BorderFactory.createEmptyBorder(0,0,50,0));
 		mainJScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		
 		// Init ResponseLogic
@@ -148,7 +149,7 @@ public class Window {
 				
 				mainPanel.add(antwortTextArea);
 				mainPanel.add(Box.createRigidArea(new Dimension(0,40)));
-				userTextArea.setText("");
+				userTextArea.setText("*Text hier..*");
 				userTextArea.setFocusable(true);
 				mainPanel.add(userTextArea);
 				mainJScrollPane.revalidate();
